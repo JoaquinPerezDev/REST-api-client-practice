@@ -12,7 +12,7 @@ function ProjectDetailsPage(props) {
 
     const getProject = () => {
         axios   
-            .get(`${API_URL}/projects/${projectId}`)
+            .get(`${API_URL}/api/projects/${projectId}`)
             .then((response) => {
                 const oneProject = response.data;
                 setProject(oneProject);

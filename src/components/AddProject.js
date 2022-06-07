@@ -34,8 +34,9 @@ function AddProject(props) {
                     value={title}
                     onChange={(e) => setTitle(e.target.value)}
                 />
+                
                 <label>Description:</label>
-                <input
+                <textarea
                     type="text"
                     name="description"
                     value={description}
